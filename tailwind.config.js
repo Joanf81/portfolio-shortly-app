@@ -22,6 +22,52 @@ export default {
       spacing: {
         180: '32rem',
       },
+      keyframes: {
+        "fly-in-right": {
+          "0%": {
+              opacity: "0",
+              transform: "translate3d(-1500px, 0, 0)",
+              transitionTimingFunction: "cubic-bezier(0.215, 0.61, 0.355, 1)",
+          },
+          "60%": {
+              opacity: "1",
+              transform: "translate3d(25px, 0, 0)"
+          },
+          "75%": {
+              transform: "translate3d(-10px, 0, 0)"
+          },
+          "90%": {
+              transform: "translate3d(5px, 0, 0)"
+          },
+          "100%": {
+              transform: "none"
+          }
+        },
+        "fly-in-left": {
+          "0%": {
+              opacity: "0",
+              transform: "translate3d(1500px, 0, 0)",
+              transitionTimingFunction: "cubic-bezier(0.215, 0.61, 0.355, 1)",
+          },
+          "60%": {
+              opacity: "1",
+              transform: "translate3d(-25px, 0, 0)"
+          },
+          "75%": {
+              transform: "translate3d(10px, 0, 0)"
+          },
+          "90%": {
+              transform: "translate3d(-5px, 0, 0)"
+          },
+          "100%": {
+              transform: "none"
+          },
+      },
+      },
+      animation: {
+        flyinright: 'fly-in-right 0.6s ease-in-out 0s 1',
+        flyinleft: 'fly-in-left 0.6s ease-in-out 0s 1'
+      }
     },
   },
   plugins: [],

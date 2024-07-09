@@ -21,6 +21,7 @@ export default function LinksForm({handleCreateLink}: LinksFormProps) {
 
         setInvalidLinkError(false);
         setEmptyLink(false);
+        setLink("");
       } else {
         setInvalidLinkError(true);
         setEmptyLink(false);

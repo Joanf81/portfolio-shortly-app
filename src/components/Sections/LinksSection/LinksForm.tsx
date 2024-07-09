@@ -3,17 +3,21 @@ import { useState } from "react";
 import Button from "../../HtmlElements/Button";
 import ErrorMessage from "./ErrorMessage";
 
-export default function LinksForm() {
+interface LinksFormProps {
+  handleCreateLink(link: string): void
+}
+
+export default function LinksForm({handleCreateLink}: LinksFormProps) {
   const urlPatternRegExp = new RegExp("^(http[s]?:\\/\\/(www\\.)?|ftp:\\/\\/(www\\.)?|www\\.){1}([0-9A-Za-z-\\.@:%_\+~#=]+)+((\\.[a-zA-Z]{2,3})+)(/(.)*)?(\\?(.)*)?");
 
-  const [link, setLink] = useState("");
-  const [emptyLinkError, setEmptyLink] = useState(false);
-  const [invalidLinkError, setInvalidLinkError] = useState(false);
+  const [link, setLink] = useState<string>("");
+  const [emptyLinkError, setEmptyLink] = useState<boolean>(false);
+  const [invalidLinkError, setInvalidLinkError] = useState<boolean>(false);
 
   function handleClick() {
     if (link) {
       if (urlPatternRegExp.test(link)) {
-        // ...
+        handleCreateLink(link);
 
         setInvalidLinkError(false);
         setEmptyLink(false);

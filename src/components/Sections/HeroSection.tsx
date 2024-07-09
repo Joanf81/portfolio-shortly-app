@@ -1,7 +1,7 @@
-import Button from "./Button";
-import IllustrationWorkingSvg from "./Svg/IllustrationWorkingSvg"
+import Button from "../HtmlElements/Button";
+import IllustrationWorkingSvg from "../Svg/IllustrationWorkingSvg"
 
-export default function Hero() {
+export default function HeroSection() {
   return <section id="hero">
     <div className="flex flex-col justify-center items-center lg:flex-row-reverse lg:justify-between lg:items-start lg:px-6">
       <IllustrationWorkingSvg viewBox="0 0 733 482" className="w-11/12 h-auto mt-12 lg:w-6/12 md:w-8/12 "/>
@@ -13,6 +13,5 @@ export default function Hero() {
         <Button xl className="mt-6 lg:py-4">Get Started</Button>
       </div>
     </div>
-
   </section>;
 }

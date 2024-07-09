@@ -1,6 +1,6 @@
-import Link from "./Link"
-import Button from "./Button";
-import LogoSvg from "./Svg/LogoSvg";
+import Link from "../HtmlElements/Link"
+import Button from "../HtmlElements/Button";
+import LogoSvg from "../Svg/LogoSvg";
 
 export default function Header() {
   return <menu>

@@ -1,5 +1,5 @@
-import Header from "./components/Header"
-import Hero from "./components/Hero";
+import Header from "./components/Sections/Header"
+import Hero from "./components/Sections/HeroSection";
 
 export default function App() {
   return (
@@ -8,6 +8,7 @@ export default function App() {
         <Header/>
         <Hero />
       </div>
+      <LinksSection />
     </>
   );
 };

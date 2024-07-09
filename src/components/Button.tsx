@@ -2,19 +2,31 @@ import { PropsWithChildren } from "react"
 
 interface ButtonProps {
   square?: boolean,
+  xl?: Boolean,
+  className?: string,
   [props:string]: any
 }
 
-export default function Button({square, children, ...props}: PropsWithChildren<ButtonProps>) {
-  let roundedProp = "rounded-full";
+export default function Button({square, xl, children, className, ...props}: PropsWithChildren<ButtonProps>) {
+  let roundedProp = 'rounded-full';
   let fontWeightProp = 'font-bold';
+
+  let textSize = 'text-md';
+  let paddingY = 'py-3';
+  let paddingX = 'px-8';
   
   if (square) {
-    roundedProp = "rounded-xl";
+    roundedProp = 'rounded-xl';
     fontWeightProp = 'font-light';
   }
 
-  return <button className={`px-8 py-3 bg-cyan text-white ${fontWeightProp} font-sans text-md hover:bg-cyanLight ${roundedProp}`} {...props}>
+  if (xl) {
+    textSize = 'text-2xl'
+    paddingY = 'py-5';
+    paddingX = 'px-10';
+  }
+
+  return <button className={`${paddingX} ${paddingY} bg-cyan text-white ${fontWeightProp} font-sans ${textSize} hover:bg-cyanLight ${roundedProp} duration-100 ${className}`} {...props}>
     {children}
   </button>
 }

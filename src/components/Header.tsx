@@ -15,7 +15,7 @@ export default function Header() {
       </div>
       <div className="hidden flex-row items-center space-x-6 lg:flex">
         <Link href="#">Login</Link>
-        <Button>Sign up</Button>
+        <Button>Sign Up</Button>
       </div>
     </div>
   </menu>;

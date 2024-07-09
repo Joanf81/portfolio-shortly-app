@@ -4,9 +4,9 @@ import LinksForm from "./LinksForm";
 import LinksContainer, { LinkList } from "./LinksContainer"
 
 const exampleLInks:LinkList = [
+  {longLink: "https://www.example.com/7/12/example.php?r=23", shortLink: "https://rel.ink/gob3X9"},
   {longLink: "https://example.io/132245324-ab4fcd2-233.html", shortLink: "https://rel.ink/k4IKyk"},
   {longLink: "https://twitter.com/thisisanexample", shortLink: "https://rel.ink/gxOXp9"},
-  {longLink: "https://www.example.com/7/12/example.php?r=23", shortLink: "https://rel.ink/gob3X9"}
 ]
 
 export default function LinksSection() {

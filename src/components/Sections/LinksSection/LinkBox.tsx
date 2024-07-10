@@ -1,11 +1,11 @@
 import Button from "../../HtmlElements/Button";
 
 interface LinkBoxProps {
-  longLink: string,
-  shortLink: string
+  longLink: string;
+  shortLink: string;
 }
 
-export default function LinkBox({longLink, shortLink}: LinkBoxProps) {
+export default function LinkBox({ longLink, shortLink }: LinkBoxProps) {
   function handleCopy() {
     navigator.clipboard.writeText(shortLink);
   }
@@ -15,7 +15,12 @@ export default function LinkBox({longLink, shortLink}: LinkBoxProps) {
       <p className="font-bold">{longLink}</p>
       <div className="flex flex-col items-center space-y-4 md:flex-row md:space-x-4 md:space-y-0">
         <p className="font-bold text-cyan">{shortLink}</p>
-        <Button square sm onClick={handleCopy} className="group-even:bg-darkViolet group-even:hover:bg-grayishViolet">
+        <Button
+          square
+          sm
+          onClick={handleCopy}
+          className="group-even:bg-darkViolet group-even:hover:bg-grayishViolet"
+        >
           Copy
         </Button>
       </div>

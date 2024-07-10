@@ -13,7 +13,7 @@ interface LinksContainerProps {
 
 export default function LinksContainer({linksList}: LinksContainerProps) {
   return (
-    <ul className="flex flex-col-reverse space-y-4 w-full mt-6 ">
+    <ul className="flex flex-col-reverse w-full mt-6 ">
       {linksList.map(({longLink, shortLink}, index) => {
         return <LinkBox key={index} longLink={longLink} shortLink={shortLink} />;
       })}

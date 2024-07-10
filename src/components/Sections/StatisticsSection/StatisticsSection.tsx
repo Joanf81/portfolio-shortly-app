@@ -13,7 +13,7 @@ export default function StatisticsSection() {
         <FeaturesContainer>
           <FeatureBox
             key={0}
-            index={0}
+            className="md:mt-0"
             title="Brand Recognition"
             description="Boost your brand recognition with each click. Generic links don't mean a thing. Branded links help instil confidence in your content."
           >
@@ -22,7 +22,7 @@ export default function StatisticsSection() {
 
           <FeatureBox
             key={1}
-            index={1}
+            className="mt-24 md:mt-8"
             title="Detailed Records"
             description="Gain insights into who is clicking your links. Knowing when and where people engage with your content helps inform better decisions."
           >
@@ -31,7 +31,7 @@ export default function StatisticsSection() {
 
           <FeatureBox
             key={2}
-            index={2}
+            className="mt-24 md:mt-16"
             title="Fully Customizable"
             description="Improve brand awareness and content discoverability through customizable links, supercharging audience engagement."
           >

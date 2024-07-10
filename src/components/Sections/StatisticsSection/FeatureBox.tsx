@@ -3,22 +3,21 @@ import { PropsWithChildren } from "react";
 interface FeatureBoxProps {
   title: string;
   description: string;
-  index: number;
+  className?: string;
 }
 
 export default function FeatureBox({
   title,
   description,
-  index,
+  className,
   children,
 }: PropsWithChildren<FeatureBoxProps>) {
-  const marginTop = index * 8;
 
   return (
     <li
-      className={`relative flex flex-col w-[297px] p-6 mt-${marginTop} bg-white rounded-xl text-left`}
+    className={`relative flex flex-col max-w-[592px] p-6 mx-6 bg-white rounded-xl md:w-[212px] lg:w-[297px] xl:w-[378px] 2xl:w-[468px] ${className}`}
     >
-      <div className="absolute -top-8 left-6 p-4 bg-veryDarkViolet rounded-full">
+      <div className="absolute left-1/2 -translate-x-1/2 -top-10 mx-auto p-5 bg-veryDarkViolet rounded-full md:left-6 md:translate-x-0">
         {children}
       </div>
       <h4 className="mt-12 text-xl text-black font-bold ">{title}</h4>

@@ -32,8 +32,8 @@ export default function LinksSection() {
   }
 
   return (
-    <section id="links" className="relative bg-gray-100 ">
-      <div className="max-w-4xl mx-auto mt-20 p-6">
+    <section id="links" className="bg-gray-100">
+      <div className="max-w-4xl mx-auto mt-40 p-6">
         <LinksForm handleCreateLink={createLink} />
         <LinksContainer linksList={linkList}/>
       </div>

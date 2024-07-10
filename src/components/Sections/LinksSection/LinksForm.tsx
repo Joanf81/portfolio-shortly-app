@@ -37,7 +37,7 @@ export default function LinksForm({handleCreateLink}: LinksFormProps) {
   }
 
   return (
-    <div className="relative w-full p-10 bg-darkViolet rounded-lg ">
+    <div className="relative w-full -mt-20 p-10 bg-darkViolet rounded-lg ">
       <div className="flex flex-col space-y-4 md:flex-row md:justify-between md:space-x-4 md:space-y-0">
         <input type="text" placeholder="Shorten a link here" value={link} onChange={handleInputChange} className="p-4 rounded-lg w-full placeholder:text-yellow-500 focus:outline-none"/>
         <Button square onClick={handleClick} className="px-8 w-full md:w-48">

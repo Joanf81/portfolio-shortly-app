@@ -1,6 +1,7 @@
 import Header from "./components/Sections/Header"
 import Hero from "./components/Sections/HeroSection";
 import LinksSection from "./components/Sections/LinksSection/LinksSection";
+import StatisticsSection from "./components/Sections/StatisticsSection"
 
 export default function App() {
   return (
@@ -10,6 +11,7 @@ export default function App() {
         <Hero />
       </div>
       <LinksSection />
+      <StatisticsSection />
     </>
   );
 };

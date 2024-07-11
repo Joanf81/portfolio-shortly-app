@@ -7,7 +7,10 @@ export default function CTASection() {
         <h1 className="text-4xl text-white font-bold">
           Boost your links today
         </h1>
-        <Button className="mt-8">Get Started</Button>
+        <Button xl className="mt-8 md:hidden">
+          Get Started
+        </Button>
+        <Button className="hidden mt-8 md:block">Get Started</Button>
       </div>
     </section>
   );

@@ -7,7 +7,7 @@ import FeatureBox from "./FeatureBox";
 
 export default function StatisticsSection() {
   return (
-    <section id="statistics" className="bg-gray-100 pb-96">
+    <section id="statistics" className="bg-gray-100 pb-32">
       <div className="flex flex-col items-center w-full max-w-2xl mx-auto bg-s text-center md:max-w-3xl lg:max-w-5xl xl:max-w-7xl 2xl:max-w-screen-2xl ">
         <StatisticsHeader />
         <FeaturesContainer>

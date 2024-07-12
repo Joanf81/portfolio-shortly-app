@@ -16,6 +16,9 @@ export default function LinksForm({ handleCreateLink }: LinksFormProps) {
   const [emptyLinkError, setEmptyLink] = useState<boolean>(false);
   const [invalidLinkError, setInvalidLinkError] = useState<boolean>(false);
 
+  const errorClass =
+    emptyLinkError || invalidLinkError ? "border border-red" : "";
+
   function handleClick() {
     if (link) {
       if (urlPatternRegExp.test(link)) {
@@ -46,7 +49,7 @@ export default function LinksForm({ handleCreateLink }: LinksFormProps) {
           placeholder="Shorten a link here"
           value={link}
           onChange={handleInputChange}
-          className="p-4 rounded-lg w-full placeholder:text-yellow-500 focus:outline-none"
+          className={`p-4 rounded-lg w-full ${errorClass} placeholder:text-yellow-500 focus:outline-none`}
         />
         <Button square onClick={handleClick} className="px-8 w-full md:w-48">
           Shorten It!

@@ -8,7 +8,7 @@ React + TailwindCSS
 
 ## Visit
 
-You can visit the example page on: [https://joan-loopstudios.netlify.app/](https://joan-shortly-app.netlify.app)
+You can visit the example page on: https://joan-shortly-app.netlify.app
 
 ## Preview
 

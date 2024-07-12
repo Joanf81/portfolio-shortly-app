@@ -18,7 +18,7 @@ export default function Menu() {
   }
 
   return (
-    <menu className="relative">
+    <menu className="relative w-full max-w-2xl mx-auto bg-s md:max-w-3xl lg:max-w-5xl xl:max-w-7xl 2xl:max-w-screen-2xl">
       <HamburgerMenu open={open} />
       <div className="flex flex-row items-center justify-between w-full pt-6 px-6">
         <div className="flex flex-row items-center space-x-20">

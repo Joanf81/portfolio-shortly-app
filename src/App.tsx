@@ -8,10 +8,8 @@ import Footer from "./components/Sections/Footer";
 export default function App() {
   return (
     <>
-      <div className="w-full max-w-2xl mx-auto bg-s md:max-w-3xl lg:max-w-5xl xl:max-w-7xl 2xl:max-w-screen-2xl ">
-        <Menu />
-        <HeroSection />
-      </div>
+      <Menu />
+      <HeroSection />
       <LinksSection />
       <StatisticsSection />
       <CTASection />

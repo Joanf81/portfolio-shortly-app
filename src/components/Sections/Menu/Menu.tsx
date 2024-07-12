@@ -19,6 +19,7 @@ export default function Menu() {
 
   return (
     <menu className="relative">
+      <HamburgerMenu open={open} />
       <div className="flex flex-row items-center justify-between w-full pt-6 px-6">
         <div className="flex flex-row items-center space-x-20">
           <LogoSvg />
@@ -38,7 +39,6 @@ export default function Menu() {
           handleClick={handleHamburguerButtonClick}
         />
       </div>
-      <HamburgerMenu open={open} />
     </menu>
   );
 }
